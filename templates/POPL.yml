@@ -1,0 +1,88 @@
+# POPL Entry Template v0.0
+# Copy this file to your session directory and fill in the values.
+# See SPEC/popl-entry-v0.0.md for field definitions.
+
+popl:
+  spec: popl-entry-v0.0
+
+# Unique identifier: popl-YYYY-MM-DD-<target>-<sequence>
+entry_id: "popl-YYYY-MM-DD-target-001"
+
+# Human-readable title
+title: "MCP Server <name> Validation"
+
+# Author (human-readable, not DID)
+author: "Your Name or Team"
+
+# Trust levels achieved
+levels:
+  level_0_recorded: true      # Git commit with artifacts
+  level_1_notarized: false    # IPFS + Hedera HCS (update after notarization)
+  level_2_attributed: false   # Optional: DID signature
+  level_3_third_party: false  # Optional: External validation
+
+# Observation context
+observed:
+  timezone: "Asia/Tokyo"
+  observed_at: "YYYY-MM-DDTHH:MM:SS+09:00"
+  environment: "Genspark Sandbox"  # or "Local (Pop!_OS 22.04)"
+
+# What was validated
+target:
+  protocol:
+    name: "MCP"
+    spec_version: "2024-11-05"
+    source: "https://spec.modelcontextprotocol.io/specification/2024-11-05/"
+  mcp_server:
+    package: "@example/mcp-server-name"
+    version: "1.0.0"
+    launch: "npx -y @example/mcp-server-name"
+  evidence_ref: "events.json"
+
+# Tools used
+tooling:
+  observer:
+    name: "proofscan"
+    package: "@proofofprotocol/proofscan"
+    version: "0.9.0"
+  notary:
+    name: "inscribe-mcp"
+    package: "@proofofprotocol/inscribe-mcp"
+    version: "0.1.0"
+
+# Evidence location
+evidence:
+  git:
+    forge: "github"
+    repo: "proofofprotocol/proofscan"
+    commit: "COMMIT_SHA_HERE"
+    path: "validation/session-YYYY-MM-DD-target/"
+  artifacts:
+    - name: "events.json"
+      sha256: "SHA256_HASH_HERE"
+    - name: "tree.json"
+      sha256: "SHA256_HASH_HERE"
+    - name: "RUNLOG.md"
+      sha256: "SHA256_HASH_HERE"
+
+# Notarization (fill after Level 1)
+notarization:
+  ipfs:
+    bundle_cid: ""  # e.g., "bafybei..."
+  hcs:
+    topic_id: ""    # e.g., "0.0.7503789"
+    transaction_id: ""  # e.g., "0.0.7503789-1234567890.123456789"
+    payload_ref: ""     # e.g., "ipfs://bafybei..."
+
+# Attribution (optional - Level 2)
+# attribution:
+#   did: "did:key:z6Mk..."
+#   signature: "base64-encoded-signature"
+#   signed_hash: "sha256-of-evidence-bundle"
+
+# Third-party validation (optional - Level 3)
+# validation:
+#   third_party:
+#     - validator: "Reviewer Name"
+#       attestation_url: "https://..."
+#       date: "YYYY-MM-DD"
