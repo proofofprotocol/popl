@@ -5,8 +5,10 @@
 ### Proof of Protocol
 The philosophy that AI agent communication should be observable, recordable, and verifiable. Not a product, but a principle.
 
-### POPL (Proof of Protocol Ledger)
+### POPL (Public Observable Proof Ledger)
 The structured ledger format for recording validation sessions. Defines how evidence is organized, referenced, and notarized.
+
+> **Origin name:** Proof of Protocol Ledger — The original name, emphasizing protocol-level evidence. As the project evolved toward public observability and publishable sanitized evidence, the name expanded to *Public Observable Proof Ledger*.
 
 ### POPL Entry
 One validation session record. Contains:

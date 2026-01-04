@@ -1,13 +1,25 @@
-# POPL: Proof of Protocol Ledger
+# POPL: Public Observable Proof Ledger
 
 > **Languages:** English | [日本語](README.ja.md)
+
+**POPL** stands for **Public Observable Proof Ledger**.
+
+It was originally conceived as **Proof of Protocol Ledger** (the origin name),
+focusing on protocol-level behavior evidence. As the project evolved toward
+public observability and publishable evidence, the name naturally expanded to
+*Public Observable Proof Ledger*.
+
+In this project, "ledger" means recording append-only, verifiable evidence
+(sanitized artifacts + cryptographic hashes), not a simple export or log dump.
+
+---
 
 **POPL** is the structured ledger format for recording AI protocol validation sessions. It answers: *What was observed? When? By whom? Can it be verified?*
 
 ## Philosophy
 
 - **Proof of Protocol** = The philosophy of observable, verifiable AI communication
-- **POPL** = The ledger structure that makes it permanent
+- **POPL** = The public observable ledger structure that makes it permanent
 - **POPL Entry** = One validation session, one record
 
 ## Repository Structure

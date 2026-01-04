@@ -1,13 +1,26 @@
-# POPL: Proof of Protocol Ledger
+# POPL: Public Observable Proof Ledger
 
 > **Languages:** [English](README.md) | 日本語
+
+**POPL**は **Public Observable Proof Ledger**（公開観測可能証明台帳）の略です。
+
+当初は **Proof of Protocol Ledger**（オリジン名）として構想され、
+プロトコルレベルの動作証拠に焦点を当てていました。プロジェクトが
+公開観測性と公開可能な証拠へと進化する中で、名称も自然に
+*Public Observable Proof Ledger* へと拡張されました。
+
+このプロジェクトにおける「台帳（ledger）」とは、追記専用で検証可能な証拠
+（サニタイズされたアーティファクト + 暗号学的ハッシュ）を記録することを意味し、
+単なるエクスポートやログダンプではありません。
+
+---
 
 **POPL**は、AIプロトコル検証セッションを記録するための構造化台帳フォーマットです。「何が観測されたか？いつ？誰が？検証可能か？」に答えます。
 
 ## 思想
 
 - **Proof of Protocol** = 観測可能で検証可能なAI通信の哲学
-- **POPL** = それを永続化する台帳構造
+- **POPL** = それを永続化する公開観測可能な台帳構造
 - **POPL Entry** = 1検証セッション = 1記録
 
 ## リポジトリ構成
