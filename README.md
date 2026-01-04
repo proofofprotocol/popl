@@ -4,6 +4,8 @@
 
 **POPL** stands for **Public Observable Proof Ledger**.
 
+POPL is a ledger structure for recording and referencing observable evidence of protocol and AI executions.
+
 It was originally conceived as **Proof of Protocol Ledger** (the origin name),
 focusing on protocol-level behavior evidence. As the project evolved toward
 public observability and publishable evidence, the name naturally expanded to
